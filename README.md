@@ -1,0 +1,2 @@
+#Gestionale Dipendenti
+Vorrei implementare in questo repository una versione del gestionale dipendenti che avevo precedentemente creato con spring boot, implemntado anche il frontend creato con la libreria ReactJs

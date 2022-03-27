@@ -1,9 +1,10 @@
 import './App.css';
+import ListaDipendentiComponent from './components/ListaDipendentiComponent';
 
 function App() {
   return (
-    <div>
-      <h1>Ciao Mondo</h1>
+    <div className="container">
+      <ListaDipendentiComponent/>
     </div>
   );
 }

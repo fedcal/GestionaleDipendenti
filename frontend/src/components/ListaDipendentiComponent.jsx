@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import DipendentiService from '../services/DipendentiService'
 
  class ListaDipendentiComponent extends Component {
     constructor(props){
@@ -6,6 +7,12 @@ import React, { Component } from 'react'
         this.state={
             dipendenti: []
         }
+    }
+
+    componentDidMount(){
+        DipendentiService.getDipendenti().then((res)=>{
+            this.setState({dipendenti: res.data});
+        });
     }
 
     render() {
